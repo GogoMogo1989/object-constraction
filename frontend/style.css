@@ -31,55 +31,16 @@ appearance: none !important;
 border-radius: 0;
 }
 
-#root header{
-    position:fixed;
-    width:100%;
-    height:60px;
-    background-color: #1a24fb;
+form{
+    border: 2px solid black;
+    width: 400px;
+    margin: 50px;
+    background-color: blueviolet;
 }
 
-#root header button{
-    position: absolute;
-    right:0;
-    top:0;
-    width:40px;
-    height:40px;
-     margin:20px;
-}
-
-#root button svg{
-    pointer-events: none ;
-}
-
-#root header button svg rect{
-    fill:white;
-    transform-origin: center;
-    transform-box: fill-box;
-    transition: opacity 400ms, transfrom 400ms;
-}
-
-
-#root header button svg rect:nth-child(1){
-    transform:translate(10px, 10px)
-}
-
-#root header button svg rect:nth-child(2){
-    transform:translate(10px, 19px)
-}
-
-#root header button svg rect:nth-child(3){
-    transform:translate(10px, 28px)
-}
-
-#root header button.clicked svg rect:nth-child(1){
-    transform: translate(20px, 20px) rotate(45deg)
-}
-
-#root header button.clicked svg rect:nth-child(2){
-    transform:translate(10px, 19px);
-    opacity:0;
-}
-
-#root header button.clicked svg rect:nth-child(3){
-    transform:translate(20px, 20px) rotate(-45deg) 
+button{
+    width: 50px;
+    height: 20px;
+    background-color: gold;
+    color: black;
 }
