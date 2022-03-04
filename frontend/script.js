@@ -201,10 +201,10 @@ function updateValue(e) {
 
 
     const apod = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${nasaApiKey}&date=${requestedDate}`)
-    
-    
-    
     const apodJson = await apod.json()
+    
+    
+    
 
     console.log(apodJson.title)
 
