@@ -1,12 +1,12 @@
-/* function Country(name, short, population, flag, continent){
+ function Country(name, short, population, flag, continent){
     this.name = name;
     this.short = short;
     this.population = population;
     this.flag = flag;
     this.continent = continent;
 }
-
-
+ 
+/*  
 const menuButton = () => {
     return`
     <button id="menuBtn">
@@ -205,8 +205,9 @@ function updateValue(e) {
     
   
 
-    console.log(apodJson.title)
+    console.log(apodJson)
 
+    let r=[];
 
     fetch(`https://api.nasa.gov/planetary/apod?api_key=${nasaApiKey}&date=${requestedDate}`).then(
         function(apodResponse){
@@ -214,11 +215,16 @@ function updateValue(e) {
             apodResponse.json().then(
                 function(apodResponsejson){
                     console.log(apodResponsejson.title)
+                    let k=apodResponsejson.title
+                    let v=apodResponsejson.date
+                    let t=apodResponsejson.explanation
+                    let e=r.push(k, v, t)
                     
                 }
             )
         }
     )
+    console.log(r)
 
 }
 window.addEventListener("load", loadEvent);
